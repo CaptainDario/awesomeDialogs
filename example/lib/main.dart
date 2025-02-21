@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                   pressEvent: () {
                     AwesomeDialog(
                       context: context,
-                      dialogType: DialogType.info,
+                      dialogType: DialogType.noHeader,
                       borderSide: const BorderSide(
                         color: Colors.green,
                         width: 2,
@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
                   pressEvent: () {
                     AwesomeDialog(
                       context: context,
-                      dialogType: DialogType.warning,
+                      dialogType: DialogType.noHeader,
                       headerAnimationLoop: false,
                       animType: AnimType.bottomSlide,
                       title: 'Question',
@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                   pressEvent: () {
                     AwesomeDialog(
                       context: context,
-                      dialogType: DialogType.infoReverse,
+                      dialogType: DialogType.noHeader,
                       headerAnimationLoop: true,
                       animType: AnimType.bottomSlide,
                       title: 'INFO Reversed',
@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                   pressEvent: () {
                     AwesomeDialog(
                       context: context,
-                      dialogType: DialogType.warning,
+                      dialogType: DialogType.noHeader,
                       headerAnimationLoop: false,
                       animType: AnimType.topSlide,
                       showCloseIcon: true,
@@ -145,7 +145,7 @@ class _HomePageState extends State<HomePage> {
                   pressEvent: () {
                     AwesomeDialog(
                       context: context,
-                      dialogType: DialogType.error,
+                      dialogType: DialogType.noHeader,
                       animType: AnimType.rightSlide,
                       headerAnimationLoop: false,
                       title: 'Error',
@@ -166,7 +166,7 @@ class _HomePageState extends State<HomePage> {
                   pressEvent: () {
                     AwesomeDialog(
                       context: context,
-                      dialogType: DialogType.question,
+                      dialogType: DialogType.noHeader,
                       animType: AnimType.rightSlide,
                       headerAnimationLoop: true,
                       title: 'Question',
@@ -187,7 +187,7 @@ class _HomePageState extends State<HomePage> {
                       context: context,
                       animType: AnimType.leftSlide,
                       headerAnimationLoop: false,
-                      dialogType: DialogType.success,
+                      dialogType: DialogType.noHeader,
                       showCloseIcon: true,
                       title: 'Succes',
                       desc:
@@ -233,7 +233,7 @@ class _HomePageState extends State<HomePage> {
                     AwesomeDialog(
                       context: context,
                       animType: AnimType.scale,
-                      dialogType: DialogType.info,
+                      dialogType: DialogType.noHeader,
                       body: const Center(
                         child: Text(
                           'If the body is specified, then title and description will be ignored, this allows to further customize the dialogue.',
@@ -254,7 +254,7 @@ class _HomePageState extends State<HomePage> {
                   pressEvent: () {
                     AwesomeDialog(
                       context: context,
-                      dialogType: DialogType.infoReverse,
+                      dialogType: DialogType.noHeader,
                       animType: AnimType.scale,
                       title: 'Auto Hide Dialog',
                       desc: 'AutoHide after 2 seconds',
@@ -276,7 +276,7 @@ class _HomePageState extends State<HomePage> {
                       context: context,
                       keyboardAware: true,
                       dismissOnBackKeyPress: false,
-                      dialogType: DialogType.warning,
+                      dialogType: DialogType.noHeader,
                       animType: AnimType.bottomSlide,
                       btnCancelText: "Cancel Order",
                       btnOkText: "Yes, I will pay",
@@ -300,7 +300,7 @@ class _HomePageState extends State<HomePage> {
                     dialog = AwesomeDialog(
                       context: context,
                       animType: AnimType.scale,
-                      dialogType: DialogType.info,
+                      dialogType: DialogType.noHeader,
                       keyboardAware: true,
                       body: Padding(
                         padding: const EdgeInsets.all(8.0),

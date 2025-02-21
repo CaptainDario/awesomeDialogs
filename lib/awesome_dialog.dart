@@ -14,7 +14,7 @@ class AwesomeDialog {
   ///Constructor
   AwesomeDialog({
     required this.context,
-    this.dialogType = DialogType.info,
+    this.dialogType = DialogType.noHeader,
     this.customHeader,
     this.title,
     this.titleTextStyle,
@@ -434,26 +434,10 @@ class AwesomeDialog {
 
 ///Defines the header of [AwesomeDialog]
 enum DialogType {
-  ///Dialog with information type header
-  info,
-
-  ///Dialog with information type header rotated 180 degree
-  infoReverse,
-
-  ///Dialog with warning amber type header
-  warning,
-
-  ///Dialog with error red type header
-  error,
-
-  ///Dialog with success green type header
-  success,
 
   ///Dialog without a header
   noHeader,
 
-  ///Dialog with question header
-  question
 }
 
 ///Defines dismiss type of [AwesomeDialog]
